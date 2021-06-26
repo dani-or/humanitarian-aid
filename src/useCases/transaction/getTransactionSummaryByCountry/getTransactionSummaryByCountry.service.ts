@@ -11,13 +11,19 @@ export class GetTransactionSummaryService {
     let response = {};
     //Acá va la logica de mi negocio
     let transactionsSummaries : Array<TransactionSummary> =await this.transactionRepository.getTransactionsSummaries(data.country);
-    //Clasificar por Año Cada summary 
+    //Clasificar por Año Cada summary
     transactionsSummaries.forEach(sumary => {
       if(!response.hasOwnProperty(sumary.getYear().toString()) ){
         response[sumary.getYear().toString()] ={ organizations:[]};
       }
       response[sumary.getYear().toString()].organizations.push( { organization:sumary.getOrganization(), value:sumary.getValue()});
     });
+
+    for(let year in response){
+      response[year].organizations.sort(function (a, b) {
+        return a.value - b.value;
+      });
+    }
     return response;
   }
 }

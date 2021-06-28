@@ -10,3 +10,6 @@ $ npm install
 $ npm start
 $ npm test //solo para ejecutar las pruebas unitarias
 ```
+
+### Diagrama de Clases 
+![Diagram de clases ](/images/clases.png?raw=true "Optional Title")

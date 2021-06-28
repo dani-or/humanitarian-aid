@@ -18,11 +18,17 @@ $ npm test //solo para ejecutar las pruebas unitarias
 
 ### Consumo
 
-Para invocar el servicio se hace así:
+Para invocar el servicio local se hace así:
 
 ```sh
 $ curl --location --request GET 'http://localhost:8080/getTransactionSummaryByCountry?country=SD'
 
+```
+
+Para invocar el servicio que está desplegado en AWS se hace así:
+
+```sh
+$ curl --location --request GET 'http://107.20.83.116:8080/getTransactionSummaryByCountry?country=SD'
 ```
 
 ### Inicializar el docker

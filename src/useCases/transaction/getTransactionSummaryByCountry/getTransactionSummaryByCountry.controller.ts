@@ -4,11 +4,11 @@ import { GetTransactionSummaryService } from "./getTransactionSummaryByCountry.s
 
 export class GetTransactionSummaryController {
 
-  constructor(private getCredit: GetTransactionSummaryService) {}
+  constructor(private getTransactionSummaryService: GetTransactionSummaryService) {}
   
   async handle(request: Request, response: Response): Promise<Response> {
     try {
-      let p = await this.getCredit.execute({country:request.query.country});
+      let p = await this.getTransactionSummaryService.execute({country:request.query.country});
       return response.status(201).json(p);
     } catch (err) {
       return response.status(400).json({

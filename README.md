@@ -52,3 +52,6 @@ $ docker run --network host -d humanitarian-aid
 
 ### Diagrama de Componentes 
 ![Diagram de componentes ](/images/componentes.png?raw=true "Optional Title")
+
+### Caché
+La caché está implementada de forma local  y esta se renueva cada 5 minutos

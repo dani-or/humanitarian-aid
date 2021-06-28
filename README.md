@@ -1,5 +1,10 @@
 # humanitarian-aid
-Proyecto para consultar la lista de donaciones a un pais por las diferentes organizaciones ordenando la lista de los donantes de la mayor donación a la menor para cada año
+Proyecto para consultar la lista de donaciones a un pais por las diferentes organizaciones ordenando la lista de los donantes de la mayor donación a la menor para cada año.
+
+Para tal fin se está utilizando el API(iatistandard.org)
+https://iatidatastore.iatistandard.org/api/transactions/aggregations/?aggregations=count,value,expenditure,activity_count,commitment,incoming_fund,transaction_date_year&format=json&recipient_country=SD&group_by=provider_org,transaction_date_year&convert_to=usd
+
+
 
 ### Installation
 

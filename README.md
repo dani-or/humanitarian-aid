@@ -16,6 +16,30 @@ $ npm start
 $ npm test //solo para ejecutar las pruebas unitarias
 ```
 
+### Consumo
+
+Para invocar el servicio se hace así:
+
+```sh
+$ curl --location --request GET 'http://localhost:8080/getTransactionSummaryByCountry?country=SD'
+
+```
+
+### Inicializar el docker
+Generar la imagen
+
+```sh
+$ docker image build -t humanitarian-aid .
+
+```
+
+Correr la imagen
+
+```sh
+$ docker run --network host -d humanitarian-aid
+
+```
+
 ### Diagrama de Clases 
 ![Diagram de clases ](/images/clases.png?raw=true "Optional Title")
 

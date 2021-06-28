@@ -12,7 +12,7 @@ RUN npm i
 COPY src ./src
 COPY tsconfig.json ./tsconfig.json
 
-# Expose port 9443
-EXPOSE 9443
+# Expose port 8080
+EXPOSE 8080
 
 CMD npm run start

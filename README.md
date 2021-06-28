@@ -13,3 +13,7 @@ $ npm test //solo para ejecutar las pruebas unitarias
 
 ### Diagrama de Clases 
 ![Diagram de clases ](/images/clases.png?raw=true "Optional Title")
+
+
+### Diagrama de Componentes 
+![Diagram de componentes ](/images/componentes.png?raw=true "Optional Title")
